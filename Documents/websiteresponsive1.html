@@ -1,0 +1,960 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Comfortaa&family=Inter&family=Maven+Pro&family=Montserrat:wght@300&family=Outfit:wght@200&family=Poppins:wght@100;300&family=Questrial&family=Quicksand:wght@300&family=Tajawal:wght@300&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            *{
+                box-sizing: border-box;
+                text-decoration: none;
+                font-family: poppins;
+                
+                
+            }
+            button{
+                background-image:linear-gradient(90deg, hsla(0, 80%, 50%, 0.5), hsla(200, 60%, 50%, 0.5));
+                padding: 2%;
+                border-radius: 8px;
+                color:white;
+                border:2px solid brown;
+                text-shadow: 3px 3px 9px black;
+            }
+            p{
+                line-height: 1.9;
+            }
+            img{
+                width: 100%;
+                height: auto;
+            }
+            .dropdiv{
+                
+                
+                position:relative;
+               
+            }
+            
+            .dropul{
+                position:absolute;
+                padding: 2% 6% ;
+               margin-top:1%;
+                background-image:linear-gradient(90deg, hsla(350, 60%, 50%, 0.7), hsla(200, 30%, 70%, 0.7));
+                display: none;
+                border-radius: 10px;
+            }
+            .dropul li{
+                padding: 2% 20%;
+                width:190px;
+                color:whitesmoke;
+                text-decoration: underline;
+                cursor: pointer;
+                list-style-type: none;
+                margin-bottom: 1%;
+                
+            }
+            .dropul li:hover{
+                color:red;
+                transition: 1s;
+            }
+            .dropdiv:hover .dropul{
+                display: block;
+            }
+            .navul2 a{
+                transition: 0.7s;
+                transition-timing-function: ease-out;
+            }
+            .navul2 a:hover{
+                color:red
+            }
+            
+            .logoimg{
+                width:200px
+            }
+            body{
+                margin:0%;
+                padding:0%
+            }
+            .nav1,.nav2{
+                display: flex;
+                padding:0% 13%;
+                align-items: center;
+                justify-content: space-around;
+                font-size: 12px;
+                width:100%;
+                
+                
+                background-image:linear-gradient(90deg, hsla(0, 80%, 50%, 0.5), hsla(200, 60%, 50%, 0.5))
+
+            }
+            .nav1{
+                background-image:linear-gradient(90deg, hsla(0, 80%, 40%, 0.5), hsla(200, 60%, 40%,0.5))
+            }
+            .nav2{
+                padding:1.5% 17% 1.5% 17%;
+            }
+            h3,.centertext{
+                text-align: center;
+            }
+            .navul1,.navul2{
+                display: flex;
+                
+                list-style-type:none;
+                justify-content: space-between;
+                
+            }
+            .awardimgbox{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+            }
+            .navul2{
+                width: 80%;
+                
+            }
+            .parabars,.paraimages{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .paraimages div{
+                width: 25%;
+                height: auto;
+            } 
+
+            .parabars p{
+             text-align: center;
+             border-left:5px solid yellow;
+             background-color: rgb(128, 16, 59);  
+             color:white;
+             box-shadow: 3px 3px 8px black;
+             padding: 1%;
+             width:24%;
+             margin:auto;
+             margin-bottom: 2%;
+             height: 60px;
+             display: flex;
+             font-size: 14px;
+             align-items: center;
+             justify-content: center;
+            }
+            
+            .headlinebox{
+                height: auto;
+                margin:auto;
+                padding:1% 3% 1% 3%;
+                
+                display: flex;
+                border:1px solid black;
+                box-shadow: 3px 3px 10px black;
+                background-color: white;
+                
+            }
+            
+            
+            .headlinebox img{
+                width:25%;
+                height: auto;
+            }
+            .headlinebox h2{
+                font-size: 30px;
+            }
+            .contentbox{
+                width:60%;
+                margin:auto;
+                position: relative;
+                top:-80px;
+                list-style-type:lower-alpha;
+
+            }
+            
+            .contentbox ol li{
+                color:black
+            }
+            .reviewbox{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            
+            .rinbox{
+                width:50%;
+                height: auto;
+                box-shadow: 3px 3px 10px black;
+                padding:1%;
+                display: flex;
+                
+                flex-direction: column;
+            }
+            iframe{
+                width: 100%;
+                
+            }
+            .rinboxv{
+                width:49.8%;
+                margin:auto;
+                height: auto;
+                
+                
+            }
+            
+            .rinbox img{
+                width:25%;
+                margin:auto
+            }
+            .bars{
+                display: flex;
+                box-shadow: 3px 3px 11px black;
+                padding:0% 1% 0% 1%;
+                margin:2% 0% 2% 0%;
+                border-radius: 8px;
+                
+            }
+            .bar1,.search{
+                display: none;
+            }
+            .stsaybox{
+                margin-bottom: 5%;
+            }
+            .stsaybox div{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .learncodebox img{
+                width:80%;
+                margin-left: 10%;
+                margin-bottom: 2%;
+            }
+            .fcinbox,.learncodeinbox,.learncodeinbox div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                margin-bottom: 5%;
+            }
+            .learncodeinbox{
+                box-shadow: 3px 3px 8px black;
+                
+            }
+            
+            .learncodeinbox div{
+                margin:2% 0%;
+                height: 200px;
+                width:18%;
+                box-shadow: 3px 3px 8px black;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content:space-around;
+                padding: 2%;
+            }
+            .learncodeinbox div img{
+                width:110px
+            }
+            .fcboxin{
+                box-shadow: 3px 3px 8px black;
+                padding: 1%;
+                margin-bottom: 5%;
+            }
+            .fcinbox div{
+                box-shadow: 3px 3px 8px black;
+                width:33%;
+                height: 450px;
+                padding: 2%;
+                text-align: center;
+                margin-bottom: 1%;
+            }
+            .fcinbox div img{
+                width:120px
+            }
+            .follow,.followin1,.followin2{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0% 1%;
+            }
+            .follow{
+                padding: 2% 19%;
+                background-color: aliceblue;
+                width: 100%;
+            }
+            .followin1,.followin2{
+                width: 30%;
+                color:black
+                
+            }
+            .followin1 i,.followin2 i{
+                padding: 5%;
+            }
+
+            .followin1 i:hover,.followin2 i:hover{
+                color:red;
+                
+            }
+
+            .followin2 input{
+                padding: 1% 10%;
+            }
+            input:focus{
+                border:2px dotted red;
+                background-color: aqua;
+            }
+            .followin2{
+                justify-content: right;
+                
+            }
+            .searchicon{
+                margin: 5%;
+            }
+            .footerbox{
+                background-image:linear-gradient(90deg, hsla(0, 80%, 50%, 0.5), hsla(200, 60%, 50%, 0.5))
+            }
+            .footer h3{
+                text-align: left;
+            }
+            
+            .footer p,.footer a,.footer li{
+                font-size: 13px;
+                color:white;
+                list-style-type:none;
+            }
+            .footer a:hover,.footer li:hover{
+                color:red;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+            .footer,.footerbottom{
+                width: 100%;
+                padding: 1% 19%;
+               color:white;
+                display: flex;
+                
+                text-align: left;
+                justify-content: space-between;
+                
+            }
+            .footer div{
+                width:24%;
+                line-height: 35px;
+            }
+            .footer img{
+                width:200px
+            }
+            .footer :first-child{
+                display: flex;
+                align-items: center;
+            }
+            .footerbottom div{
+                width: 40%;
+            }
+            .footerbottom div:last-child{
+                display: flex;
+                justify-content: right;
+                width:50%;
+                align-items: center;
+                
+            }
+            
+            .footerbottom div:last-child a{
+                border-right: 2px solid brown;
+                padding:0% 1%;
+            }
+
+            
+            @media(max-width:1025px){
+                .bar1{
+                    display: none;
+                }
+                .nav1,.nav2{
+                    justify-content: space-around;
+                    padding: 0% 2%;
+                    
+                    
+                }
+                .follow,.footer,.footerbottom{
+                    padding: 1% 7%;
+                }
+                .contentbox{
+                    width: 85%;
+                }
+                .nav2{
+                    padding:1.5% 4%
+                }
+                .nav1 p{
+                    width:30%
+                    
+                }
+                .nav1 ul{
+                    width:65%
+                }
+                .headlinebox img{
+                    width:27%
+                }
+                
+            }
+                
+            
+            @media(max-width:800px){
+                .nav1 ul{
+                    display: none;
+                }
+                .nav2 ul{
+                    width:100%
+                }
+                .search{
+                    display: inline-block;
+                }
+                .nav1{
+                    justify-content: space-between;
+                    padding: 0% 3%;
+                }
+                
+                .nav2{
+                    padding:1.5% 1%;
+                    justify-content: space-between;
+                }
+                .logoimg{
+                    width: 17%;
+                }
+                .stsaybox div{
+                    flex-direction: column;
+                    
+                }
+                .headlinebox,.reviewbox{
+                    flex-direction: column;
+                   
+                    align-items: center;
+                }
+                .rinbox,.rinboxv{
+                    width: 95%;
+                }
+                .parabars p{
+                    width:100%
+                }
+                .fcinbox{
+                    flex-direction: column;
+                    padding: 3%;
+                }
+                .fcinbox div{
+                    width: 100%;
+                    height: auto;
+                }
+                .learncodeinbox div{
+                    width: 45%;
+                }
+                .footer div{
+                width:49%;
+                flex-wrap: wrap;
+                line-height: normal;
+            }
+            .dropul li{
+                padding: 2% 5%;
+                
+                z-index: 4;
+                color:whitesmoke;
+                text-decoration: underline;
+                cursor: pointer;
+                list-style-type: none;
+                margin-bottom: 1%;
+                
+            }
+                
+            }
+            @media(max-width:601px){
+                .nav1{
+                    display: none;
+                }
+                .nav2 ul{
+                    display: none;
+                }
+                .nav2{
+                    padding:3% 3%;
+                    justify-content: space-between;
+                }
+                .bar1{
+                    display: inline-block;
+                }
+                .follow,.footer,.footerbottom{
+                    flex-direction: column;
+                    margin:auto;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 4% 1%;
+                    
+                    
+                }
+                .follow div,.footerbottom div{
+                    width:90%
+                }
+                .footerbox h3{
+                    text-align: center;
+                }
+                .footer div{
+                    width:80%;
+                    
+                    
+                }
+                .footerbox{
+                    width: 100%;
+                    
+                }
+                .footer h3{
+                text-align: left;
+                }
+            }
+        
+            @media(min-width:1026px){
+                
+                .nav1 ul{
+                    width:60%
+                }
+            }
+
+            
+            
+        </style>
+    </head>
+    <body>
+        
+            <div class="nav1">
+                 <p><a href="#">Call us:</a>+91-9399-093-723</p>
+                 <ul class="navul1">
+                     <li><a href="#"><strong>LEARN CODE ONLINE</strong></a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><i class="fas fa-search"></i></li>
+                 </ul>
+                 
+                 <i class="search fas fa-search"></i>
+            </div>
+            <div class="nav2">
+                <img class="logoimg" src="images/logo (1).png">
+                <ul class="navul2">
+                    <li><a href="#"><i class="fas fa-home"></i><strong>HOME</strong></a></li>
+                        <div class="dropdiv"><li><a href="#"><strong>ONLINE MARKETING</strong><i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="dropul">
+                                <li>Digital Marketing</li>
+                                <li>SEO Training</li>
+                                <li>PPC Training</li>
+                                <li>SMO Training</li>
+                                <li>Email Marketing</li>
+                                <li>Content Writing</li>
+                                <li>Ecommerce Marketing</li>
+                            </ul> 
+                            
+                        </li></div>
+                        <div class="dropdiv"><li><a href="#"><strong>DESIGNING COURSES</strong><i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="dropul">
+                                <li>Graphic Designing</li>
+                                <li>Photoshop Training</li>
+                                <li>Corel Draw Training</li>
+                                <li>Illustrator Training</li>
+                                <li>Web Designing</li>
+                                <li>Bootstrap Training</li>
+                                <li>HTML-CSS Training</li>
+                                <li>Ux-Ui Design</li>
+                            </ul> 
+                        </li></div>
+                        <div class="dropdiv"><li><a href="#"><strong>DEVELOPMENT COURSES</strong> <i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="dropul">
+                                <li>Web Development</li>
+                                <li>PHP Training</li>
+                                <li>Mysql Training</li>
+                                <li>Jquery-Ajax Training</li>
+                                <li>Laravel Training</li>
+                                <li>Codeigniter Training</li>
+                                <li>Wordpress Training</li>
+                                <li>OpenCart Training</li>
+                                <li>Magento Training</li>
+                                <li>ANgular Js Training</li>
+                                <li>Android Development</li>
+                                <li>Iphone Development</li>
+                                <li>JAVA Development</li>
+                            </ul> 
+                        </li></div>
+                        <div class="dropdiv"><li><a href="#"><strong>OTHER COURSES</strong><i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="dropul">
+                                <li>Ethical hacking</li>
+                                <li>C C++ Training</li>
+                                <li>Video Training</li>
+                                <li>Software Testing</li>
+                                
+                            </ul> 
+                        </li></div>
+                </ul>
+                <i class="fa-solid fa-bars bar1"></i>
+            </div>
+            <div class="imgbox">
+                <img src="images/digital-marketing-training-institute-indore (1).webp">
+            </div>
+            <div class="contentbox">
+                <div class="headlinebox">
+                    <h2>#1 Digital Marketing Course in Indore, Web design course Indore, Web development course Indore, Ethical hacking course Indore</h2>
+                    <img src="images/job-placement (2).webp">
+                </div>
+                <br>
+                <p>Tech forest delivers in-depth PHP training in Indore , web design training in Indore , digital marketing training in Indore , and ethical hacking course in Indore . Tech forest has delivered several thousand skilled professionals to the industry. Tech forest Indore is the trusted partner and skilled vendor of multiple IT companies in Indore. Tech forest Indore offers the best IT software, networking training and placement in technologies like web development training in Indore, PHP training in Indore, JAVA training in Indore , Android development training in Indore , and many more to the students. Tech forest- the best training institute in Indore has the complete practical based approach in training. Training students and shaping their careers for a better future in the industry is our sole responsibility.</p>
+                <p>Our digital marketing course Indore is designed to give accommodate individuals from various fields and different backgrounds. We cover all the aspects of digital marketing like SEO training in Indore , SMO training in Indore , PPC training in Indore , E-mail marketing training in Indore , Content writing training in Indore , and E-commerce marketing training in Indore . Along with these courses we also offer Google AdWords training in Indore . Our core features are providing expert professionals as trainers to the students, seeking an affordable course fee, and offering 100% placement assistance with globally recognized certifications. Training, certifying, and placing aspirants in top MNC’s are the pathways followed in accomplishing our responsibilities.</p>
+                <h3>Advantages of Tech forest Indore</h3>
+                <ol class="li1">
+                    <li>10+ years of experience in the education industry</li>
+                    <li>Focused on job-oriented courses and skill development</li>
+                    <li>Training centers in 10 cities-Indore, Bhopal, Delhi, Pune, Chennai, Hyderabad, Bangalore, Kolkata, Surat, and Jaipur.</li>
+                    <li>500+ associated corporate trainers</li>
+                    <li>350+ training courses</li>
+                    <li>One of the largest training center in Indore</li>
+                </ol>
+                <h3>Student Review</h3>
+                <p class="centertext">Delivering quality training is our prime objective.</p>
+                <p class="centertext">Read what some of our recent trainees have to say about their experience of training at Tech forest Indore.</p>
+                <div class="reviewbox">
+                    <div class="rinboxv">
+                        <iframe src="https://player.vimeo.com/video/345186927?h=f44e67480e" width="640" height="361" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            
+                    </div>
+                    <div class="rinboxv">
+                        <iframe title="vimeo-player" src="https://player.vimeo.com/video/345633112?h=e3dd087812" width="640" height="359" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="rinbox">
+                        <img src="images/techforest-student (1).webp">
+                        <p>As per my experience in the Tech forest, I would like to say that they have a very nice course curriculum according to the latest IT trends and designed as per the market relevance. Hats off to the trainers at the training center. They provide complete assistance and always ready to guide. – Rohit Singhvi</p>
+                    </div>
+                    <div class="rinbox">
+                        <img src="images/tecforest-students.webp">
+                        <p>I am Sanjeet Kumar from Indore. By my friend's reference, I take admission to Tech forest training institute in Indore. It is the best PHP training institute for fresher’s to learn the latest technologies. The environment was outstanding. I like those days of my training. Sanjeet Kumar
+
+                        </p>
+                    </div>
+                </div>
+                <div class="barbox">
+                    <div class="bars">
+                        <p>PHP training in Indore -Want to become an expert in PHP? Join Tech forest institute. We offer job-oriented and placement focused PHP training in Indore. The goal of PHP classes in Indore is to provide developers an easy and complete understanding of the basic to advanced level concepts of PHP.
+                        </p>
+                    </div>
+                    <div class="bars">
+                        <p>Web Designing course in Indore - Tech forest’s certified web designing training in Indore is focused on training our students to develop a website using the latest development tools. We also offer HTML-CSS training in Indore. Our highly proficient trainers deliver the best web designing classes in Indore which assist the students to achieve a successful position in the IT industry. - More Info - Web Designing
+                        </p>
+                    </div>
+                    <div class="bars">
+                        <p>Web Development course in Indore - Get the best learning things in web development training in Indore at Tech forest. Get 100% placement assurance for web developers in Indore or rest part of India. You may learn Bootstrap training in Indore, JQuery-Ajax training in Indore, Angular Js training in Indore, and many more development courses. More Info - Web Development
+                        </p>
+                    </div>
+                    <div class="bars">
+                        <p>Digital Marketing training in Indore - Get the best learning things in web development training in Indore at Tech forest. Get 100% placement assurance for web developers in Indore or rest part of India. You may learn Bootstrap training in Indore, JQuery-Ajax training in Indore, Angular Js training in Indore, and many more development courses. More Info - Digital Marketing
+                        </p>
+                    </div>
+                    <div class="bars">
+                        <p>Software Testing training Indore - Are you looking for the best software testing training institute in Indore? If yes, then you might be looking for someone who teaches you a software testing course in Indore along with your career too. Tech forest is here with its world-class software testing training in Indore which is backed by our professional staff and innovative infrastructure. More Info Software Testing
+                        </p>
+                    </div>
+                    <div class="bars">
+                        <p>Ethical Hacking course in Indore - Tech forest provides the best ethical hacking training in Indore. The program is exclusively designed for students and working professionals who want to pursue their careers in the field of ethical hacking. Get CEH certified with our ethical hacking course in Indore. - More Info Ethical Hacking
+                        </p>
+                    </div>
+                    <h3>Best digital marketing training in Indore, digital marketing course in Indore
+                    </h3>
+                    <p>Awarded Asias best digital marketing institute Tech forest, best digital marketing training institute in Indore offers professional diploma and certification in digital marketing. Our training programs are designed and delivered by industry experts with a 100% practical approach. The main reason behind the great demand for digital marketing courses in Indore is the boom of the digital era. Today, a large number of users are connected to the Internet. So, there is a huge opportunity for digital marketers as they have a vast audience to target their business. Indore is a commercial capital of M.P. Therefore, it is the perfect place for learning digital marketing training in Indore. Indore has a nice ambiance, pleasant atmosphere with affordable living expenses. So, students prefer Indore over other cities. Besides, Tech forest offers SEO training in Indore, PPC training in Indore, and many more aspects of digital marketing. After completing the course, you will receive a certification from Tech forest stating that you have acquired the skills of digital marketing specialists to lead digital marketing efforts in your organization.
+
+                    </p>
+                    <img src="images/digital-marketing-training-institute-in-indore (1).webp">
+                    <br>
+                    <h3>Why Digital Marketing With Us ?</h3>
+                    <div class="parabars">
+                        <p>The Global Standard</p>
+                        <p>Flexible Study Options</p>
+                        <p>Leading Digital Experts</p>
+                        <p>Industry-Validated Syllabus</p>
+                        <p>Up-To-Date Industry Knowledge</p>
+                        <p>International Certification</p>
+                        <p>Affordable Fees</p>
+                        <p>100% Job Placement</p>
+                    </div>
+                    <div class="paraimages">
+                        <div >
+                            <img src="images/seo-digital-marketing (1).webp">
+                        </div>
+                        <div>
+                            <img src="images/social-marketing (1).webp">
+                        </div>
+                        <div>
+                            <img src="images/email-marketing-award (1).webp">
+                        </div>
+                        <div>
+                            
+                        </div>
+                    </div>
+                    <div class="awardbigbox">
+                        <h3>Digital Marketing Award</h3>
+                        <p>Recently, Tech forest institute has been rewarded with excellence IT award 2019, and also got into the list of top 10 digital marketing training institutes in Indore. Our friendly staff members, amazing customer services, and quality training made us an award winner of the “Excellence training award by CSI IT in 2019”. Our main motto is to provide quality education to the students. This helps them to reach on top levels. With the highest Google’s 5 stars review ratings, Tech forest stands out to be the popular digital marketing training institute in Indore. Our digital marketing course Indore will transform you into a complete digital marketer with expertise in digital marketing domains.</p>
+                        <div class="awardimgbox">
+                            <div>
+                                <img src="images/tech-forest-award.webp">
+                            </div>
+                            <div>
+                                <img src="images/tech-forest-award1.webp">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stsaybox">
+                        <h3>What Our Students Have To Say?</h3>
+                        <p>Reviews are most important for any online or offline business. We trained almost 3000+ students for digital marketing training in India, PHP training in India, web design, web development, and ethical hacking course in India. Our positive review score is 4.9 out of 5. Tech forest makes its place amongst the top 10 institutes that provide Photoshop training in India, Bootstrap training in India, HTML-CSS training in India, Ux-Ui design training in India, and many more courses.</p>
+                        <div>
+                            <iframe title="vimeo-player" src="https://player.vimeo.com/video/345186927?h=f44e67480e" width="640" height="359" frameborder="0" allowfullscreen></iframe>
+                            <iframe title="vimeo-player" src="https://player.vimeo.com/video/345633112?h=e3dd087812" width="640" height="359" frameborder="0" allowfullscreen></iframe>
+                    
+                        </div>
+                    </div>
+                    <div class="fcbox">
+                        <div class="fcboxin">
+
+                        
+                            <h3>Featured Courses</h3>
+                            <p>There are various types of courses available in the IT market. But which course is suitable for you? This decision is yours. Tech forest is here to decide the course in which you will get enormous growth. We are providing the best CorelDraw training in India, Illustrator training in India where you will learn various graphic design strategies. Besides we also provide mobile application training in India along with Android training in India. After the completion of each course, you will get rewarded with a globally recognized certificate which adds a prestigious meaning in your resume.
+
+                            </p>
+                            <div class="fcinbox">
+                                <div>
+                                    <img src="images/wordpress-icon.webp">
+                                    <p>We provide WordPress training in Indore for freshers, as well as an experienced person who wants depth, advance knowledge in WordPress such as Plugin and Widget Development.
+
+                                    </p>
+                                    <button>MORE INFO</button>
+                                </div>
+                                <div>
+                                    <img src="images/ech-icon.webp">
+                                    <p>Ethical Hacking training in Indore from Tech forest is the most demanded training institute in Indore. Cybercriminals use the internet and computer technology to hack user’s details, smartphone data, etc.
+
+                                    </p>
+                                    <button>MORE INFO</button>
+                                </div>
+                                <div >
+                                    <img src="images/graphic-design-icon.webp">
+                                    <p>Tech forest offer Basic to Advanced Graphic Design Course in Indore . We train our students with latest market trends and help develop creative as well as professional skills.
+
+                                    </p>
+                                    <button>MORE INFO</button>
+                                </div>
+                                <div>
+                                    <img src="images/seo-icon.webp">
+                                    <p>If you want to learning and executing internet based marketing, then our SEO training Indore course will lead you in the right direction to making you financially independent after you complete it.
+
+                                    </p>
+                                    <button>MORE INFO</button>
+
+                                </div>
+                                <div>
+                                    <img src="images/php-icon.webp">
+                                    <p>Our PHP training in Indore classes provide you real-time working on live projects and placement in Indore. We have more than 10+ years experience working professional trainers for Advance PHP classes in Indore.
+
+                                    </p>
+                                    <button>MORE INFO</button>
+                                </div>
+                                <div>
+                                    <img src="images/magento-icon.webp">
+                                    <p>Magento is the most popular for e-commerce. It's used by the brands, Samsung, and is popular with medium-sized ecommerce. We are providing advance Magento training Indore.
+
+                                    </p>
+                                    <button>MORE INFO</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="learncodebox">
+                            <h3>LEarn Code Online 100% Free - Check Our Blog</h3>
+                            <p>If you are not able to attend classroom training due to your busy schedule, then don’t worry. Tech forest offers you the facility of online learning also. We aim to give quality education to our students, not making money from them. That’s why Tech forest offers you 100% free online learning with well-organized study material. You can download this material in PDF format and learn according to your convenience. You learn from anywhere, anytime. We also provide video lectures to our students which helps them to grasp knowledge about training courses easily. Tech forest- the best training institute in Indore has a complete practical based approach and offers an interactive environment to the aspirants. So, what are you waiting for, just call us on +91-9399093728 and enjoy free demo classes.
+
+                            </p>
+                            <img src="images/learn-code-online (1).webp">
+                            <div class="learncodeinbox">
+                                <div>
+                                    <p>PHP</p>
+                                    <img src="images/php-icon.webp">
+                                </div>
+                                <div>
+                                    <p>HTML</p>
+                                    <img src="images/html-logo.webp">
+                                </div>
+                                <div>
+                                    <p>CSS</p>
+                                    <img src="images/java-script-logo.webp">
+                                </div>
+                                <div>
+                                    <p>Javascript</p>
+                                    <img src="images/java-script-logo.webp">
+                                </div>
+                                <div>
+                                    <p>JQuery</p>
+                                    <img src="images/jquery-logo.webp">
+                                </div>
+                                <div>
+                                    <p>Photoshop</p>
+                                    <img src="images/photoshop-logo.webp">
+                                </div>
+                                <div>
+                                    <p>CorelDraw</p>
+                                    <img src="images/corel-draw-logo.webp">
+                                </div>
+                                <div>
+                                    <p>Illustrator</p>
+                                    <img src="images/illustrator-logo.webp">
+
+                                </div>
+                                <div>
+                                    <p>Wordpress</p>
+                                    <img src="images/wordpress-icon.webp">
+
+                                </div>
+                                <div>
+                                    <p>Laravel</p>
+                                    <img src="images/laravel-logo.webp">
+
+                                </div>
+                                <div>
+                                    <p>Codeigniter</p>
+                                    <img src="images/codeigniter-logo.webp">
+                                </div>
+                                <div>
+                                    <p>SEO</p>
+                                    <img src="images/seo-icon.webp">
+
+                                </div>
+                                <div>
+                                    <p>Google adword</p>
+                                    
+                                </div>
+                                <div>
+                                    <p>SMO</p>
+                                    <img src="images/smo-logo.webp">
+                                </div>
+                                <div>
+                                    <p>Email Marketing</p>
+                                    <img src="images/email-marketing-award (1).webp">
+                                </div>
+                                <div>
+                                    <p>Bootstrap</p>
+                                    <img src="images/bootstrap-logo.webp">
+                                </div>
+                                <div>
+                                    <p>MySQL</p>
+                                    <img src="images/mysql-logo.webp">
+
+                                </div>
+                                <div>
+                                    <p>Cyber Security</p>
+                                    <img src="images/ech-logo.webp">
+                                </div>
+                                <div>
+                                    <p>Magento</p>
+                                    <img src="images/magento-icon.webp">
+
+                                </div>
+                                <div>
+                                    <p>Android</p>
+                                    <img src="images/andriod-logo.webp">
+                                </div>
+                            </div>
+                            <div class="dvbox">
+                                <h3>DEvelopment Courses In India</h3>
+                                <p>The practical web development course in Indore allows you to learn web development concepts from basic to advanced levels. We provide training on popular web development courses like MySql training in Indore, JQuery-Ajax training in Indore, C/C++ training in Indore, and many more. In addition to this, we offer reliable training in various PHP frameworks. It includes Laravel training in Indore, Codeignitor training in Indore, OpenCart training in Indore, Magento training in Indore, and Angular JS training in Indore. At Tech forest, we provide certification after the completion of each course. This certificate helps you to face challenging interviews in the IT industry. Our training courses are not end-up here only. We offer Video editing training in Indore, an ethical hacking course in Indore, and many more valuable courses.
+
+                                </p>
+                                <p>Our courses do not end here. If we talk about mobile app development courses in India , then Tech forest proves itself as India’s leading institute which offers Android development training in Indore , IPhone development training in Indore , and APK android training in Indore. Tech forest spread its roots across the globe. Students can contact on +91-9399093728 for free demo classes and career guidance.
+
+                                </p>
+                                
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                
+
+            </div>
+            <div class="footerbox">
+                <div class="follow">
+                    <div class="followin1">
+                        <p>Follow us:</p>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <div class="followin2">
+                        <input type="text" >
+                        <i class="fas fa-search searchicon"></i>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div>
+                        <img src="images/logo-white.png">
+                    </div>
+                    <div>
+                        <h3>Indore Office</h3>
+                        <p>507,Rajani Bhawan,M.G.Road</p>
+                        <br>
+                        <p>Indore M.P. 452001</p>
+                        <p><abbr title="Telephone">Telephone:</abbr> +91-9399-093-728</p>
+                        <p><abbr title="info@techforest">Send Email</abbr></p>
+
+                        <h3>Delhi Office</h3>
+                        <p>A-17 First Floor Janpura Extension</p>
+                        <br>
+                        <p>New Delhi 110014</p>
+                        <p><abbr title="Telephone">Telephone:</abbr> +91-9575-715-791</p>
+                        <p><abbr title="info@techforest">Send Email</abbr></p>
+
+                    </div>
+                    <div>
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li>PHP training Indore</li>
+                            <li>Andriod training Indore</li>
+                            <li>Laravel training Indore</li>
+                            <li>Photoshop training Indore</li>
+                            <li>CorelDraw training Indore</li>
+                            <li>Cyber security training Indore</li>
+                            <li>Digital Marketing training Indore</li>
+                            <li>Email Marketing training Indore</li>
+                            <li>IOS - iphone training Indore</li>
+                            <li>Angular Js training Indore</li>
+                            <li>SEO training Indore</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Quick LInks</h3>
+                        <ul>
+                            <li>Content writing training Indore</li>
+                            <li>OpenCart training Indore</li>
+                            <li>PPC training Indore</li>
+                            <li>SMO training Indore</li>
+                            <li>Ecommerce marketing training indore</li>
+                            <li>Graphic Design training Indore</li>
+                            <li>Web Designing training Indore</li>
+                            <li>Web Development training Indore</li>
+                            <li>HTML - CSS training Indore</li>
+                            <li>Bootstrap training Indore</li>
+                            <li>MySql training Indore</li>
+                        </ul>
+                    </div>
+                    
+                    
+                </div>
+                <hr>
+                <div class="footerbottom">
+                    
+                    <div>
+                        <p>@Tech Forest, All rights reserved</p>
+                    </div>
+                    <div>
+                        <a href="#">About Us</a>
+                        <a href="#">Contact Us</a>
+                        <a href="#">Privacy policy</a>
+                        <a href="#">Disclaimer</a>
+                    </div>
+                </div>
+            </div>
+        
+    </body>
+</html>

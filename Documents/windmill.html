@@ -1,0 +1,156 @@
+<html>
+    <head>
+            <style>
+                *{
+                    box-sizing: border-box;
+                }
+                .main{
+                    width:80%;
+                    height: 100%;
+                    background-color: rgb(255, 255, 255);
+                    margin: auto;
+                    padding:20% 0%;
+                }
+                @keyframes anime{
+                    from{
+                        transform:rotate(0deg)
+                    }
+                    to{
+                        transform:rotate(360deg)
+                    }
+                }
+                .gol{
+                    width:80px;
+                    height: 80px;
+                    border-radius: 50%;
+                    background-image: radial-gradient( rgb(167, 167, 167),rgb(237, 237, 237));
+                    margin:auto;
+                    animation-name: anime;
+                    animation-duration: 3s;
+                    animation-timing-function: linear;
+                    
+                    animation-iteration-count: infinite;
+                    position: relative;
+                    
+                    display: flex;
+                    justify-content:center;
+                    align-items:center;
+                    transition: 1s;
+                    transition-timing-function: ease-in-out;
+                    
+                    
+                    
+                    
+                }
+                
+
+                /* .gol::before{
+                    content: 'vishal';
+                } */
+                .pipe{
+                    height: 450px;
+                    width: 40px;
+                    border-radius: 30% 30% 0% 0%;
+                    background-image: linear-gradient(90deg, rgb(232, 232, 232),rgb(207, 207, 207));
+                    margin: auto;
+                    margin-top:-5px;
+                }
+                .pankh{
+                    width:22px;
+                    height: 240%;
+                    z-index: 20;
+                    
+                    transform-origin: center;
+                    border-radius: 50% 50% 10% 10%;
+                    background-image: linear-gradient(90deg, rgb(232, 232, 232),rgb(207, 207, 207));
+                    position: absolute;
+                    transform: rotate(calc(120deg * var(--p))); 
+                    display: flex;
+                    justify-content: center;
+                    align-items: left;
+                }
+                .gol:hover{
+                    transform: rotateZ(700deg);
+                    transition: 1s;
+                    
+                    background-image: radial-gradient( rgb(255, 252, 252),rgb(124, 124, 124));
+                }
+                .pankh1{
+                    top:10px;
+                    left:150px
+                }
+                .pankh2{
+                    top:11px;
+                    right:150px
+                }
+                .pankh3{
+                    top:-194px;
+                    
+                }
+                .corner{
+                    width: 10px;
+                    content: ' ';
+                    height: 40px;
+                    border-radius :50% 50% 0% 0%;
+                    background-image:linear-gradient(red, rgb(214, 214, 214) )
+
+                }
+                .gol p b{
+                    position:absolute;
+                    inset: 11px;
+                    color:rgba(50, 50 , 50 ,1);
+                    transform: rotateZ(calc(var(--d) * 30deg));
+                    
+                    
+                }
+                .gol p b::before{
+                    content: ".";
+                    background-color:black;
+                    width: 5px;
+                    height: 5px;
+                    border-radius: 50%;
+                }
+                .gol p{
+                    display: inline-block;
+                    
+                }
+                
+            </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="gol">
+                <div style="--p:1;" class="p pankh1 pankh">
+                    <div class="corner">
+
+                    </div>
+                </div>
+                <div style="--p:2;" class="p pankh2 pankh">
+                    <div class="corner">
+
+                    </div>
+                </div>
+                <div style="--p:3;" class="p pankh3 pankh">
+                    <div class="corner">
+
+                    </div>
+                </div>
+                <p ><b style="--d:1">!</b></p>
+                <p ><b style="--d:2">!</b></p>
+                <p ><b style="--d:3">!</b></p>
+                <p ><b style="--d:4">!</b></p>
+                <p ><b style="--d:5">!</b></p>
+                <p ><b style="--d:6">!</b></p>
+                <p ><b style="--d:7">!</b></p>
+                <p ><b style="--d:8">!</b></p>
+                <p ><b style="--d:9">!</b></p>
+                <p ><b style="--d:10" >!</b></p>
+                <p ><b style="--d:11 ">!</b></p>
+                <p ><b style="--d:12 ">!</b></p>
+            </div>
+            <div class="pipe">
+
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,401 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+        <style>
+            *{
+                font-family: poppins;
+            }
+            :root{
+                --squarecolor:rgba(30, 54, 50, 1);
+                --roundcolor:rgba(60, 85, 80,1);
+                --hhandcolor:rgba(40, 54, 50, 1);
+                --mhandcolor:yellow;
+                --shandcolor:red;
+                --numbercolor:linear-gradient(rgba(210, 210, 200,1),rgba(130, 130, 1));
+                --pointcolor:rgba(170, 170, 160,1);
+                --numbercolor:rgba(210, 210, 200,0.7)
+                
+            }
+            @keyframes fishmove1{
+                0%{
+                    transform: translate(0%, 0%) rotateY(0deg);
+                    
+                }
+                30%{
+                    transform:translate(-240%,0%) rotateY(0deg);
+                }
+                35%{
+                    transform: translate(-240%,0%) rotateY(180deg);
+                     
+                }
+                65%{
+                    transform: translate(250%,0%) rotateY(180deg);
+                }
+                70%{
+                    transform: translate(250%,0%) rotateY(0deg);
+                }
+                100%{
+                    transform:translate(0%,0%) rotateY(0deg);
+                   
+                }
+                
+            }
+            @keyframes fishmove2{
+                0%{
+                    transform: translate(0%, 0%) rotateY(0deg);
+                    
+                }
+                5%{
+                    transform:translate(0%,0%) rotateY(180deg);
+                }
+                50%{
+                    transform: translate(400%,0%) rotateY(180deg);
+                     
+                }
+                55%{
+                    transform: translate(400%,0%) rotateY(0deg);
+                }
+                100%{
+                    transform:translate(0%,0%) rotateY(0deg);
+                   
+                }
+               
+            }
+            @keyframes fishmove3{
+                0%{
+                    transform: translate(0%, 0%) rotateY(180deg) ;
+                    
+                }
+                5% {
+                    transform: translate(0%, 0%) rotateY(0deg) ;
+                }
+                
+                50%{
+                    transform: translate(-410%,0%) rotateY(0deg);
+                     
+                }
+                55%{
+                    transform: translate(-410%,0%) rotateY(180deg);
+                }
+                100%{
+                    transform:translate(0%,0%) rotateY(180deg);
+                   
+                }
+                
+                
+            }
+            
+            .squarebox{
+                height:40vh;
+                width:40vh;
+                /* background-color: var(--squarecolor); */
+                background-image: url('https://blogger.googleusercontent.com/img/a/AVvXsEgklXHyUdmsUZhnccm91Ih3a84y0skAj69Gfr7U-dshK5tMv3Bi4NQpxIfViW30Ohm8EZO8pcJtRaaws00gCGvq27SnCpFJv3CkhJHPkIfKzYSo7Mfw1bDH1bQZ_dgDfpbCoDqmWktExy6lt-ofNmICk1xrtmx8EDjp7FosijKSGLoJIAkPPxF-CgsX');
+                
+                background-size: cover;
+                margin:auto;
+                border-radius: 50% 50% 15px 15px; 
+                margin-top:30vh;
+                padding-bottom: 16vh;
+                
+                box-shadow: 4px 4px 8px black, inset 4px 4px 20px black, inset -4px -4px 20px black
+
+            }
+            
+            .roundbox{
+                height: 100%;
+                width: 100%;
+                background-color: var(--roundcolor);
+                border-radius: 50% ;
+                box-shadow: 4px 4px 8px black, inset 4px 4px 15px black, inset -4px -4px 15px black;
+                position:relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 2;
+                
+                
+            }
+
+            .roundbox:before{
+                content: ' ';
+                height: 2px;
+                width: 2px;
+                z-index: 3;
+                position: absolute;
+                border-radius: 50%;
+                background-color: silver;
+                border:2px solid var(--numbercolor)
+            }
+            
+            
+            .hhand{
+                width:10px;
+                height: 50px;
+                background-color: var(--hhandcolor);
+                z-index: 2;
+
+            }
+            .mhand{
+                width:8px;
+                height: 70px;
+                background-color: var(--mhandcolor);
+                z-index: 1;
+                
+            }
+            .shand{
+                width:6px;
+                height: 90px;
+                background-color: var(--shandcolor);
+                z-index: 0;
+
+            }
+            .hhand,.shand,.mhand{
+                
+                position:absolute;
+                border-radius: 50% 50% 4px 4px;
+                
+            }
+            .numbers span{
+                position: absolute;
+                inset:2px;
+                font-size: 30px;
+                color:var(--numbercolor);
+                text-align: center;
+                transform: rotate(calc(30deg * var(--t)));
+            }
+            
+            .numbers span b{
+                display: block;
+                transform: rotate(calc(-30deg * var(--t)));
+                
+            }
+            .points span{
+                position:absolute;
+                inset:38px;
+                font-size: 7px;
+                font-weight: bold;
+                color:var(--pointcolor);
+                text-align: center;
+                transform: rotate(calc(30deg * var(--p)));
+            }
+            .circle{
+                position:absolute;
+                border-radius: 50%;
+                width:62%;
+                height:62%;
+                border:1px dashed black;
+                display: flex;
+                justify-content: center;
+                box-shadow: 0px 0px 8px black;
+                align-items: flex-start;
+                transition: 1s;
+                transition-timing-function:linear;
+
+            }
+            .mcircle{
+                width: 50%;
+                height: 50%;
+                
+            }
+            .hcircle{
+                width:38%;
+                height:38%;
+                
+            }
+            
+            .circle i{
+                
+                border-radius: 50% 50% 30% 30%;
+                height: 60%;
+                box-shadow: 0px 0px 4px black;
+                opacity: 0.90;
+                position: absolute;
+                background-color: var(--clr);
+            }
+            
+            .scircle i{
+                width:2px;
+                z-index: 6;
+            }
+            .mcircle i{
+                width: 4px;
+                z-index: 5;
+            }
+            .hcircle i{
+                width: 6px;
+                z-index: 4;
+            }
+            
+            .circle:before{
+                content: ' ';
+                width:5px;
+                height: 5px;
+                position: absolute;
+                border-radius: 50%;
+                
+                top:-8px;
+                background-color: var(--clr);
+                box-shadow: 0px 0px 5px var(--clr);
+            }
+            .basebox{
+                height: 10%;
+                width: 100%;
+                background-color: var(--roundcolor);
+                border-radius: 50% ;
+                box-shadow: 4px 4px 8px black, inset 5px 5px 10px black, inset -5px -5px 10px black;
+                position:relative;
+                top:30%;
+                left:0.5%
+                
+                
+                
+            }
+            .fishbox{
+                height: 90%;
+                width: 100%;
+               /* background-color: red; */
+                position:relative;
+                top:-60%;
+                z-index: 1;
+                 
+            }
+            .fishbox img{
+                position:absolute;
+                width: 18%;
+                top:50%;
+                opacity: 90%;
+                height: auto;
+                
+
+            }
+            .fishbox img:nth-child(1){
+                left:40%;
+                top:57%;
+                width: 16%;
+                animation:fishmove1 8s  infinite linear;
+            }
+            .fishbox img:nth-child(2){
+                left:3%;
+                top:68%;
+                width: 19%;
+                animation:fishmove2 8s infinite;
+            }
+            .fishbox img:nth-child(3){
+                left:79%;
+                top:78%;
+                width: 18%;
+                animation:fishmove3 8s infinite;
+            
+            }
+            @media(max-width:800px){
+                .numbers span{
+                
+                font-size: 28px;
+            }
+            .points span{
+                
+                inset:33px;
+                font-size: 9px;
+               
+            }
+
+            }
+
+        </style>
+        
+    </head>
+    <body>
+        <div class="squarebox">
+            <div class="roundbox">
+                <div class="circle scircle" id="sc" style= "--clr:rgba(230, 21, 40)">
+                    <i></i>
+                </div>
+                <div class="circle mcircle" id="mn" style="--clr:yellow">
+                    <i></i>
+                </div>
+                <div class="circle hcircle" id="hr" style="--clr:rgba(65, 142, 80,1)">
+                    <i></i>
+                </div>
+                <!-- <div class="circle circle4" id="mss" style="--clr:rgba(255, 0, 20,1)">
+                    <i></i>
+                </div> -->
+                <div class="numbers">
+                    
+                    <span style="--t:1;" ><b>1</b></span>
+                    <span style="--t:2;" ><b>2</b></span>
+                    <span style="--t:3;" ><b>3</b></span>
+                    <span style="--t:4;" ><b>4</b></span>
+                    <span style="--t:5;" ><b>5</b></span>
+                    <span style="--t:6;" ><b>6</b></span>
+                    <span style="--t:7;" ><b>7</b></span>
+                    <span style="--t:8;" ><b>8</b></span>
+                    <span style="--t:9;" ><b>9</b></span>
+                    <span style="--t:10;"><b>10</b></span>
+                    <span style="--t:11;"><b>11</b></span>
+                    <span style="--t:12;"><b>12</b></span>
+
+                </div>
+                <div class="points">
+                    
+                    <span style="--p:1;" class="p p1">!</span>
+                    <span style="--p:2;" class="p p2">!</span>
+                    <span style="--p:3;" class="p p3">!</span>
+                    <span style="--p:4;" class="p p4">!</span>
+                    <span style="--p:5;" class="p p5">!</span>
+                    <span style="--p:6;" class="p p6">!</span>
+                    <span style="--p:7;" class="p p7">!</span>
+                    <span style="--p:8;" class="p p8">!</span>
+                    <span style="--p:9;" class="p p9">!</span>
+                    <span style="--p:10;" class="p p10">!</span>
+                    <span style="--p:11;" class="p p11">!</span>
+                    <span style="--p:12;" class="p p12">!</span>
+                    
+
+                </div>
+            </div>
+            <div class="Basebox">
+
+            </div>
+            <div class="fishbox">
+                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjGO9NjVbbwAylc7J5WiqnsQzGvfdOpPssZ1AFo3MmmbUdvB96co1IWIUqpZ5XwZ4CvHl8QNV_JTqQYk4C7zLgRLowzRpKvr-doe7RZYYiYpiJ6rt0xNMp-eijopV1zH4-VM6e_yzmi6mHVMp8Ez6oSvoQ1ukoPiYCQH_92jNFRQvSFSuhnopa_bC3Z">
+                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjEWI7KVRKpA-oMEhVAtDfntc8TxjjQGlRGXw5lL6w5SYeMxGOjkxN1PKqoNLgXxweT8xTSaG3WmLkVhU8XjLyzUXRuYNUQa2hhUxwah6-aTz6lRw1oTlVnQbYldzzPIG6Xa88rbNPH1v4D5EdxYB6cJpaBw2vbKfn1O-l6njMIO3Mb_yGGC8jZt8uC">
+                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEi4bq7F0NC5EfLB8vfw1sNTPUuSuZf9A9aS7C6CjOBNJYlXmnygeeFaxKdoroo1j5YatZqxlgy-WNBsC3u1dhQu2JqPUnZiDnn_YWQHlnQLcFIOZwZqI3Uhl2bsBj-CN2QLVCF6CofCSX8pH_xgAcuZEtgNolQuIPWIxam9_ROyEidXwiyxz-s_9V5J">
+            </div>
+        </div>
+        <script>
+            let hr = document.querySelector('#hr');
+            let mn = document.querySelector('#mn');
+            let sc = document.querySelector('#sc');
+            
+            setInterval(() =>{
+                let day = new Date();
+                let hh = day.getHours() * 30; // 360deg/12h = 30
+                let mm = day.getMinutes() * 6; // 360deg/60 = 6
+                let ss = day.getSeconds() * 6 ; // 360deg/60 = 6
+                
+                hr.style.transform=`rotateZ(${hh+(mm/12)}deg)`;
+                mn.style.transform=`rotateZ(${mm}deg)`;
+                sc.style.transform=`rotateZ(${ss}deg)`;
+            
+            })
+
+        </script>
+    </body>
+    <!-- 1. Create Html of both Boxes
+    2. Create normal Css of Both boxes
+    3. create no. ginti 12 html
+    4. set with css
+    5. create no. ginti points
+    5. set them with css
+    7. gole hour minute seconds ke 
+    8 set them with css
+    9. kante ki bindi
+    10. kante html me 
+    11. set them with css
+    12. before kante ke liye
+    13. javascript 
+     -->
+</html>    

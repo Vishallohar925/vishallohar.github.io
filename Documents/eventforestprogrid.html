@@ -1,0 +1,1488 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Comfortaa&family=Inter&family=Maven+Pro&family=Montserrat:wght@300&family=Outfit:wght@200&family=Poppins:wght@100;300&family=Questrial&family=Quicksand:wght@300&family=Tajawal:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            body{
+                margin:0px;
+                padding: 0px;
+            }
+            img{
+                display: block;
+                height: auto;
+                width: 100%;
+                margin:auto 0%
+            }
+            *{
+                box-sizing: border-box;
+                font-family: poppins;
+                font-weight: normal;
+                list-style-type:none;
+            }
+            button{
+                border-radius: 35px;
+                position:relative;
+                padding: 8% 9%;
+                font-weight: bold;
+                color:white;
+                background-image: linear-gradient(90deg, rgb(255, 212, 193), rgb(230, 8, 75));
+                border:none;
+                overflow: hidden;
+                
+            }
+            .gol{
+                width:120px;
+                height: 120px;
+                position: absolute;
+                background-color: rgba(255, 255, 255, 0.3);
+                border-radius: 50%;
+                top:20%;
+                left:87%;
+                transition: 0.8s;
+                transition-timing-function: ease-in-out;
+            }
+            button:hover .gol{
+                top:-10%;
+                left:53%
+            }
+            .nav button{
+                background-image: linear-gradient(90deg, rgb(102, 50, 250), rgb(50, 190, 230));
+            }
+            p span{
+                color:red;
+                text-align: center;
+            }
+            a,i{
+                color:rgb(77, 69, 87);
+                text-decoration: none;
+                transition: 0.3s;
+            }
+            a:hover,i:hover{
+                color:red
+            }
+            #srvcrelative{
+                position: relative;
+                
+            }
+            .srvcabsolute{
+                position: absolute;
+                display: none;
+                grid-template-columns: auto auto auto auto;
+                width: 1910px;
+                left: -715px;
+                margin: auto;
+                transition: 0.8s;
+                text-align: left;
+               
+                justify-content: space-around;
+                background-image: linear-gradient(rgb(194, 238, 255), rgb(250, 229, 240));
+                top:75px
+            }
+            .nav a{
+                padding: 22% 0%;
+                
+            }
+            #srvcrelative:hover .srvcabsolute{
+                display: grid;
+                transition: 0.8s;
+                color: black;
+
+            }
+            .srvcabsolute h3{
+                font-weight: bold;
+            }
+            .srvcn,.srvc{
+              
+                width: 300px;
+               position: relative;
+            }
+            .srvcn{
+               padding:10% 2%; 
+               line-height: 40px;
+               position: relative;
+            }
+            .srvcn:hover h3 li{
+                color:red
+            }
+            .srvcn li{
+                transition: 1s;
+                position: relative;
+                
+            }
+            .srvcn li .divline{
+                background-color: red;
+                width:0%;
+                height: 2px;
+                position: absolute;
+                transition: 1s;
+            }
+            .srvcn li:hover .divline{
+                width: 80%;
+                transition: 0.4s;
+            }
+            .footer1 li .divline{
+                background-color: red;
+                width:0%;
+                height: 2px;
+                position: absolute;
+                transition: 1s;
+            }
+
+            .footer1 li:hover .divline{
+                width: 10%;
+                transition: 0.4s;
+            }
+            
+            .srvcn li:hover{
+                
+               
+               color:red;
+                transition: 0.3s;
+            }
+            .srvcn h3 li{
+                font-weight: bold;
+            }
+            
+            .belowphoto{
+                position:absolute;
+                border-radius: 25px 5px 5px 5px;
+                background-color: white;
+                width: 100%;
+                text-align: center;
+                top:88%;
+                padding: 0%;
+                line-height:10px;
+                
+            }
+            .belowphoto h3{
+                font-weight: bold;
+            }
+
+            h1{
+                font-size: 55px;
+                font-weight: bold;
+            }
+            h3{
+                font-size: 22px;
+            }
+            h2{
+                font-size: 34px;
+                font-weight: bold;
+            }
+
+            .nav,.imgdiv,.os2,.malldecorboxes,.service2,.work2{
+                display: grid;
+            }
+            .nav img{
+                width:50%;
+            
+            }
+            .nav{
+                grid-template-columns: 12% auto auto auto auto auto auto auto 5% 15%;
+                grid-template-rows: auto;
+                align-items: center;
+                position: sticky;
+                top:0px;
+                z-index: 3;
+                
+                
+                text-align: center;
+                padding:0% 20%;
+                margin: auto;
+                background-color: whitesmoke;
+            }
+            .nav a{
+                font-weight: bold;
+                color:rgb(88, 88, 114);
+                transition: 0.3s;
+            }
+            .nav a:hover{
+                color:red
+            }
+            .phoneicon{
+                border-radius: 50%;
+                background-image: linear-gradient(90deg, rgb(255, 212, 193), rgb(230, 8, 75));
+                padding: 28%;
+                color:white;
+                transition: 1s;
+
+                
+            }
+            .phoneicon:hover{
+                border:2px solid white;
+                color:red
+                
+            }
+            
+            .imgdiv{
+                grid-template-columns: 40% auto;
+                grid-template-rows: auto ;
+                padding:12% 22%;
+                background-image: linear-gradient(rgb(255, 249, 240), rgb(194, 248, 255));
+            }
+            .imgdiv button{
+                padding: 4% 8%;
+                margin-top:3%
+            }
+            .div3organise{
+                padding: 2% 25% ;
+                background-color: rgb(255, 233, 240);
+                display: grid;
+                justify-content: center;
+                
+            }
+            .div3organise button{
+                padding: 1.6% 3%;
+                margin: auto;
+                
+            }
+            .div3organise :nth-child(1),.div3organise :nth-child(3),.div3organise :nth-child(2),.div3organise :nth-child(8),.ourservicesdiv h2{
+                text-align: center;
+            }
+            .div3organise span{
+                color: red;
+            }
+            .ourservicesdiv{
+                padding: 2% 0%;
+            }
+            .os2{
+                grid-template-columns: auto auto auto auto;
+                grid-template-rows: auto;
+                position:relative;
+                height: 80%;
+            }
+            .os1{
+                padding: 0% 18%;
+            }
+            .osbouter{
+                position: relative;
+            }
+            .osb{
+                padding: 3%;
+                position: absolute;
+            }
+            .osb img,.srvc img{
+                transform: scale(90%, 90%);
+                transition: 0.8s;
+            }
+            .osbouter:hover .osb img{
+                transform:scale(95%, 95%) skew(-5deg, -2deg) rotate(-3deg);
+                box-shadow: 2px 2px 15px violet;
+                transition: 0.5s;
+                border-radius: 15px;
+            }
+            
+            .srvc{
+                padding:2%;
+                width:100%;
+                margin-bottom: 25%;
+                
+                box-shadow: 4px 35px 5px rgb(223, 223, 223);
+            }
+            .service22{
+                position:relative
+            }
+            .service22 img:hover{
+                border-radius: 15px;
+            }
+            .srvc1,.srvc2,.srvc3,.srvc4,.srvc5,.srvc6{
+                position: absolute;
+                transition:0.6s;
+                top:0%;
+            }
+            .service22:hover .srvc1,.service22:hover .srvc2,.service22:hover .srvc3,.service22:hover .srvc4,.service22:hover .srvc5,.service22:hover .srvc6{
+                top:-5%;
+                transition: 0.3s;
+            }
+            
+            img{
+                
+                border-radius: 15px;
+                transition: 1s;
+            }
+            img:hover{
+                
+                border-radius: 15%;
+            }
+            .malldecordiv :nth-child(1), .malldecordiv :nth-child(2){
+                text-align: center;
+            }
+            .malldecor1,.service1{
+                padding: 2% 28%;
+            }
+            .malldecorboxes{
+                grid-template-columns: auto auto auto auto;
+                grid-template-rows: auto auto auto auto;
+                gap:2%;
+                padding: 0% 15%;   
+            }
+            .malldecorboxes img{
+                border-radius: 12px;
+            }
+            .servicesdiv :nth-child(3){
+                text-align: left;
+            }
+            .servicesdiv{
+                text-align: center;
+                margin:3% 0%;
+                
+            }
+            .service1{
+                background-image: url('imagee/dot\ tee.png');
+                background-size: 200px;
+            }
+            .service2{
+                grid-template-columns: auto auto auto;
+                grid-template-rows: auto auto;
+                gap:2%;
+                height: 100%;
+                padding: 2% 19%;  
+                text-align: center;
+                
+            }
+            
+            .work1 :nth-child(3){
+                text-align: left;
+            }
+            .work1{
+                text-align: center;
+                padding: 2% 22%;
+                background-image: url('imagee/dot\ tee.png');
+                background-size: 200px;
+            }
+            .work2{
+                grid-template-columns: 9% 9% 8% 8% 8% 8% 8% 8% 8% 8% 9% 9% ;
+                grid-template-rows: auto auto auto 400px;
+                padding: 0% 19%;
+            }
+            .work2 img{
+                padding: 2%;
+                border-radius: 25px;
+            }
+            .wimg1{
+                grid-column-start: 1;
+                grid-column-end: 7;
+            }
+            .wimg2{
+                grid-column-start: 7;
+                grid-column-end: 13;
+            }
+            .wimg3{
+                grid-column-start: 1;
+                grid-column-end: 4;
+            }
+            .wimg4{
+                grid-column-start: 4;
+                grid-column-end: 7;
+            }
+            .wimg5{
+                grid-column-start: 7;
+                grid-column-end:10
+            }
+            .wimg6{
+                grid-column-start: 10;
+                grid-column-end: 13;
+            }
+            .wimg7{
+                grid-column-start: 1;
+                grid-column-end: 5;
+            }
+            .wimg8{
+                grid-column-start: 5;
+                grid-column-end: 9;
+            }
+            .wimg9{
+                grid-column-start: 9;
+                grid-column-end: 13;
+            }
+            .wimg10{
+                grid-column-start: 1;
+                grid-column-end: 13;
+                display: grid;
+                align-items: center;
+                justify-content: center;
+                
+                
+            }
+            .textimagediv,.customersdiv,.clientssaydiv,.specialceledivm,.lateststoriesdivm,.mapdiv{
+                margin:8% 0% 3% 0%;
+                padding: 2% 20%;
+            }
+            .customersdiv{
+                background-image: linear-gradient( rgba(255, 255, 250, 1), rgb(250, 225, 255) );
+                margin:3% 0%;
+                border-radius: 150px 2px;
+            }
+            .clientssaydiv{
+                margin:3% 0%
+            }
+            
+
+            .textimagediv{
+                background-color: hsla(220, 50%, 94%, 1);
+                
+            }
+            .txti{
+                display: grid;
+                grid-template-columns: auto auto;
+                
+                margin:3% 0%
+            }
+            .txti span,.txtie span,.customersdiv span,.specialcelediv span,.clientssaydiv h3{
+                font-weight: bold;
+            }
+            .txtie1{
+                text-align: center;
+                padding: 0% 25%;
+            }
+            .customersdiv,.clientssaydiv,.specialcelediv,.lateststoriesdiv{
+                text-align: center;
+            }
+            .cstmr{
+                display: grid;
+                grid-template-columns: auto auto auto auto auto ;
+                grid-template-rows: auto auto;
+                
+                
+            }
+            .cstmr img{
+                border:1px solid rgba(10, 90, 250, 0.2);
+                border-radius: 10px; 
+                padding: 15%;
+                box-shadow: 3px 3px 6px black;
+                transform: scale(0.90,0.90);
+                transition: 0.8s;
+
+            }
+            .cstmr img:hover{
+                transform: rotateZ(-4deg) scale(0.95, 0.95);
+                transition: 0.3s;
+            }
+            
+            
+            .cstmr2{
+                display: grid;
+                grid-template-columns: auto auto;
+                padding:1% 20%;
+                align-items: center;
+            }
+            .cstmr2 button{
+                height: 50%;
+                
+            }
+            
+            .clientsbox{
+                display: grid;
+                grid-template-columns: 25% 25% 50%;
+                gap:3%;
+                
+            }
+            .clientsbox img{
+                border-radius:15px
+            }
+            .clientssaydiv :nth-child(3),.specialcelediv :nth-child(3){
+                text-align: left;
+            }
+            .greview,.wreview{
+                display: grid;
+                grid-template-columns: auto auto auto;
+                grid-template-rows:auto auto ;
+                gap:3%;
+                
+            }
+            .greview img {
+                border-radius: 12px;
+            }
+            .wreview img{
+                box-shadow: 4px 4px 12px black;
+            }
+            .wreview{
+                margin:2% 0%;
+                
+                grid-template-columns: auto auto auto auto;
+            }
+            .csdimgd,.reviewbottom{
+                position:relative;
+            }
+            .csdname{
+                display: grid;
+                grid-template-columns: auto auto;
+                padding: 3%;
+                position: absolute;
+                bottom:-5%;
+                color:white;
+            }
+            .csdname img{
+                width: 35%;
+            }
+            .csddata{
+                display: grid;
+                grid-template-columns: auto auto;
+                grid-template-rows: 40% 10%;
+                padding: 0%;
+                position:absolute;
+                align-items: center;
+                justify-content: left;
+                gap:1%
+            }
+            .csddata img{
+                grid-row-start: 1;
+                grid-row-end: 3;
+            }
+            .csddata p{
+                grid-column-start: 2;
+                grid-column-end: 3;
+                width:140%
+            }
+            .redpntouter{
+                height: 25px;
+                width: 25px;
+                
+                position: relative;
+                display: grid;
+                align-items: center;
+                justify-content: center;
+            }
+            .redpoints{
+                position:absolute;
+                display: grid;
+                grid-template-columns: auto auto auto;
+                right: 6%;
+                top:84%;
+                justify-content: right;
+                
+                width:100%
+            }
+            .redpnt{
+                width:5px;
+                height:5px;
+                background-color: rgb(255, 153, 212);
+                border-radius: 50%;
+                box-sizing: content-box;
+               
+                outline-offset: 0px;
+                outline: 0px solid red;
+                transition: 0.2s;
+                /* outline: 0px solid red; */
+                
+            }
+            .redpntouter:hover .redpnt{
+                transition: 0.1s;
+                background-color:red;
+                outline: 1px solid red;
+                outline-offset: 6px;
+            }
+            .reviewbottom p{
+                font-size: 14px;
+                color:rgb(128, 93, 172)
+            }
+            .reviewbottom img{
+                width: 65%;
+            }
+            .specialcelediv{
+                background-image: linear-gradient(rgb(255, 251, 239), hsla(320, 60%, 95%, 1));
+                padding: 5% 20% 16% 20%;
+                
+                
+            }
+            .specialboxes{
+                display: grid;
+                grid-template-columns:auto auto auto auto ;
+                grid-template-rows: auto auto auto auto auto auto;
+                gap:10% 5%
+            }
+            .sp{
+                display: grid;
+                grid-template-columns: 20% auto;
+                background-color: white;
+                border-radius: 15px;
+                padding: 1% 4%;
+            }
+            .lateststoriesdiv span{
+                font-weight: bold;
+                color:blue
+            }
+            .lateststr{
+                display: grid;
+                grid-template-columns: auto auto auto;
+                gap:3%
+            }
+            .ls{
+                box-shadow: 4px 4px 12px grey;
+                border-radius: 15px;
+                
+            }
+            .ls img{
+                border-radius:15px 15px 0px 0px;
+                
+            }
+            
+            .shares{
+                display: grid;
+                grid-template-columns: 20% 10% 10% 10% 10% 10%;
+                align-items: center;
+                
+            }
+            .lateststoriesdiv{
+                margin:6% 20% 7% 20%;
+            }
+            .contactdiv{
+                background-image: linear-gradient(hsla(180, 80%, 90%, 1), hsla(320, 30%, 90%, 1));
+                padding: 5% 20%;
+            }
+            .contactindiv{
+                background-color: rgba(250, 250, 250, 0.4);
+                padding: 5%;
+                display: grid;
+                grid-template-columns: 60% auto;
+                gap:2%;
+                align-items: center;
+                border-radius: 15px;
+            }
+            .contactindiv button{
+                padding: 3% 5%;
+                width:89%;
+
+            }
+            .contactdiv .gol{
+                width:400px;
+                height: 400px;
+                top:-40%
+            }
+            .contactdiv p{
+                font-size: 13px;
+            }
+            .contactdiv button .arrow{
+                left:55%;
+                top:39.5%
+                
+            }
+            
+            input{
+                padding: 2% 5%;
+                width:42.6%;
+                border-radius: 8px;
+                outline: none;
+                border: none;
+                margin:2% 3% 2% 0%;
+                border-bottom: 1px solid grey;
+            }
+            #inputwidth{
+                width: auto;
+                
+            }
+            .mapdiv,.emailbox,.footer1,.footer2{
+                display: grid;
+                grid-template-columns:auto auto;
+                gap: 2%;
+                padding: 2% 20% 4% 20%;
+            }
+            .map1{
+                background-color: rgb(228, 247, 255);
+                padding:0% 7% 0% 7%;
+                
+            }
+            .mapdiv{
+                grid-template-columns: 55% 45%;
+                margin:auto;
+                gap:1%;
+                justify-content: center;
+            }
+            
+            .mapclass{
+                width:100%;
+                height: 100%;
+            }
+            .emailbox{
+                background-image: linear-gradient(rgb(255, 247, 235), rgb(255, 231, 245));
+                align-items: center;
+                grid-template-columns: 55% 45%;
+                padding: 4% 20% 4% 20%;
+            }
+            .emailbox button{
+                padding: 3% 10%;
+
+            }
+            .emailbox .arrow{
+                left:72%;
+                top:36.5%
+            }
+            
+            .footer1{
+                grid-template-columns: auto auto auto auto;
+            }
+            .footer1 img{
+                width:25%
+            }
+            .footer1 a{
+                line-height: 40px;
+            }
+            .footer1 button{
+                padding: 6% 12%;
+            }
+            .f1 h3{
+                color:red;
+                font-weight: bold;
+            }
+            .f2{
+                display: grid;
+                padding: 1% 20%;
+                gap:4%;
+                grid-template-columns: 30% auto auto auto auto;
+                background-color: whitesmoke;
+            }
+            .f1 button .arrow{
+                top:40.5%;
+                left:81%
+            }
+            .f3{
+                display: grid;
+                grid-template-columns: auto auto auto auto auto auto auto auto;
+                grid-template-rows: auto auto;
+                text-align: center;
+                gap:20% 0%;
+                padding: 3% 32%;
+                font-size: 25px;
+                color:rgb(97, 92, 134)
+            }
+            .f3 p{
+                grid-column-start: 1;
+                grid-column-end: 9;
+                font-size: 16px;
+               
+            }
+            @keyframes arrowanimation{
+                0%{
+                    transform: translate(0px, 0px);
+
+                }
+                50%{
+                    transform: translate(15px, 0px);
+                }
+                100%{
+                    transform: translate(0px, 0px);
+                }
+            }
+            @keyframes rgbtext{
+                0%{
+                    background-image:linear-gradient(90deg,red,blue);
+                    
+                }
+                50%{
+                    background-image:linear-gradient(90deg,blue, red);
+                    
+                }
+                100%{
+                    background-image:linear-gradient(90deg,red, blue);
+                    
+                }
+            }
+
+            .arrow{
+                animation-name: arrowanimation;
+                animation-duration: 1.8s;
+
+                position:absolute;
+                top:22px;
+                left:83.5%;
+                color:white;
+                font-weight: bold;
+                animation-iteration-count: infinite;
+                animation-timing-function:ease-in-out;
+            }
+            .rgbpd,.rgbsd{
+                
+                padding: 2% 4%;
+                
+                /* background-image:linear-gradient(90deg, red,blue); */
+                animation-name: rgbtext;
+                color:transparent;
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+                animation-duration: 2s;
+                transition:1s;
+                animation-iteration-count: infinite;
+                animation-timing-function:ease-in-out;
+            }
+            .rgbsd{
+                padding: 0%;
+                display: inline-block;
+                width:4%
+                
+            }
+            .rgbp,.rgbs{
+                font-weight: bold;
+                
+            }
+            .rgbs{
+                color:transparent
+            }
+            .rgbs:hover{
+                color:red
+            }
+        </style>
+    </head>
+    <body>
+        <div class="na">
+            <ul class="nav">
+                <li><img src="https://eventforest.in/images/event-forest-logo.png"></li>
+            <li><a href="#"><i class="fa-solid fa-house-chimney"></i> HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a id="srvcrelative" href="#">SERVICES +<div class="srvcabsolute">
+                <div class="srvcn">
+                    <ul>
+                        <h3><li>Our Services</li></h3>
+                        <li>Wedding Planner<div class="divline"></div></li>
+                        <li>Ballon Decorators<div class="divline"></div></li>
+                        <li>Birthday Decoration<div class="divline"></div></li>
+                    </ul>
+                </div>
+                <div class="srvcn">
+                    <ul>
+                        <h3><li>Services</li></h3>
+                        <li>Best Photographer<div class="divline"></div></li>
+                        <li>Catering Services<div class="divline"></div></li>
+                        <li>Flower Decoration<div class="divline"></div></li>
+                    </ul>
+                </div>
+                <div class="srvcn">
+                    <ul>
+                        <h3><li>Services</li></h3>
+                        <li>Marriage Grarden Hall<div class="divline"></div></li>
+                        <li>Mall Decoration<div class="divline"></div></li>
+                        <li>Makeup Artist<div class="divline"></div></li>
+                    </ul>
+                </div>
+                <div class="srvcn">
+                    <ul>
+                        <h3><li>Quick Links</li></h3>
+                        <li>Corporate Event Management<div class="divline"></div></li>
+                        <li>Product Launch Event<div class="divline"></div></li>
+                        <li>Pre Wedding Shoot<div class="divline"></div></li>
+                    </ul>
+                </div>
+            </div></a></li>
+            <li><a href="#">OUR EVENTS</a></li>
+            <li><a href="#">OUR BRANCHES</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#"><i class="fa-solid fa-phone phoneicon"></i></a></li>
+            
+            <li><button class="btnbt-blue">Request A Quote<div class="gol"></div></button></li></ul>
+
+        </div>
+        <div class="imgdiv">
+            <div class="imgc">
+                <h1>#1 Event Management Companies indore</h1>
+           
+                <p>Event Forest working as a qualified <a href="#">Event Management Companies indore</a> since 2011. we had a vast network with some of the best event vendors in Indore. our persistent work n reputation is just because of our client satisfaction.
+
+                </p>
+                <button>View Our History <i class="fa solid fa-down arrow"></i><div class="gol"></div></button>
+            </div>
+            <div class="imgimg">
+                <img src="https://eventforest.in/images/indore/home/event-management-companies-indore.png">
+            </div>
+            
+
+            
+        </div>
+        <div class="div3organise">
+            <p><span>10 YEARS OF EXPERIENCE $ TRUST</span></p>
+            <h2><span>Event Management</span> Companies Indore
+                Organizers,</h2>
+            <div class="rgbpd"><p class="rgbp">Thank you for a minute to read about us...</p></div>
+            <p><div class="rgbsd"><span  class="rgbs">one</span></div> and only top-rated event management organizer and planning company of its own, our event planning company fulfils all your Hassel and problems regarding managing event. Dedicated professional to execute your event in an easy and convenient strategy. Our target is to achieve 100%customer satisfaction within 200 cities with a fresh innovative approach. we have linked up with all local vendors associated with event management making it affordable for our client.
+
+            </p>
+            <p>The main objective of an event management organizer is to cover all services to make a one-stop solution for all your needs which includes wedding events, corporate events, pre-wedding shoots, balloon decoration, destination wedding, mouth-watering catering, royal ambience, accessible venues with all facilities, technical procurements, security with proper vigilance and emergency. AV productions and parties lights.
+
+            </p>
+            <p><div class="rgbsd"><span class="rgbs">Our</span></div> event planning company well executed by professional staff having work experience corporate events, sports events, promotions, activities, press conferences etc.
+
+            </p>
+            <p>Which makes a boom and fun to your event in an extraordinary way, gives your event a professional appearance and makes the event different and unique.
+
+            </p>
+            <p class="centerp">We would love to share our ideas For your Event. <div class="rgbsd"><span class="rgbs">Call Now</span></div>
+            </p>
+            <button class="btnbt-pink"><div class="gol"></div><i class="fa-solid fa-phone"></i> +91-6268-6762-20</button>
+
+        </div>
+        <div class="ourservicesdiv">
+            <div class="os1">
+                <h2>Our Services</h2>
+                <p>Event forest is well known reputed event management company and organizer Indore, we have years of experience in providing exceptional and unique services in event management. we are specialised in providing services in wedding planning, birthday decoration, flower decoration, balloon decoration, wedding photographer, pre-wedding shoot, destination wedding, product launch, mall decoration, and so on all are services are uniquely designed by our dedicated professional staff to be remembered by our clients for years we combine our services with hard work and technical approach to give a modern exemplary element. Event forest offers a wide range of services in Indore with exclusive creative design and enormous facility.
+
+                </p>
+            </div>
+            <div class="os2">
+                <div class="osbouter">
+                    <div class="osb">
+                        <img src="https://eventforest.in/images/section/four-services/balloon-decoration.jpg">
+                        <h5>Ballon Decoration</h5>
+                        <p>Trusted Balloon Decoration Service provider,10+ years experience in balloon decorations.
+    
+                        </p>
+                    </div>
+                </div>
+                <div class="osbouter">
+                    <div class="osb">
+                        <img src="https://eventforest.in/images/section/four-services/corporate-events.jpg">
+                        <h5>corporate Events</h5>
+                        <p>We have been distributing events of all shapes and sizes like product lunches, conferences, seminars, award nights, theme party.
+    
+                        </p>
+                    </div>
+                </div>
+                <div class="osbouter">
+                    <div class="osb">
+                        <img src="https://eventforest.in/images/section/four-services/birthday-decoration.jpg">
+                        <h5>Birthday Decoration</h5>
+                        <p>Planning to propose to your special someone? Leave the decorations to us! We will make your birthday unforgettable.
+    
+                        </p>
+                    </div>
+                </div>
+                <div class="osbouter">
+                    <div class="osb">
+                        <img src="https://eventforest.in/images/section/four-services/wedding-planner.jpg">
+                        <h5>Wedding Planner</h5> 
+                        <p>our team of wedding planners is always eager to accept new challenges in planning the most unforgettable events.
+    
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="malldecordiv">
+            <div class="malldecor1">
+                <p><span>WE ARE AWESOME</span></p>
+            <h2>Mall Decoration Service Provider</h2>
+            <p>Event forest alludes to a well-known name in the event management world, the company provides best mall decoration in Indore, mall decoration has become the good source to attract visitor and make them fresh look of the mall, we provide service in promoting campaign, festive season theme, outside and inside the installation and so on. by giving best budget on creating trendy shopping mall decoration.
+
+            </p>
+            </div>
+
+            <div class="malldecorboxes">
+                <img src="https://eventforest.in/images/indore/mall/01.jpg">
+                <img src="https://eventforest.in/images/indore/mall/02.jpg">
+                <img src="https://eventforest.in/images/indore/mall/03.jpg">
+                <img src="https://eventforest.in/images/indore/mall/04.jpg">
+                <img src="https://eventforest.in/images/indore/mall/05.jpg">
+                <img src="https://eventforest.in/images/indore/mall/06.jpg">
+                <img src="https://eventforest.in/images/indore/mall/07.jpg">
+                <img src="https://eventforest.in/images/indore/mall/08.jpg">
+            </div>
+        </div>
+        <div class="servicesdiv">
+            <div class="service1">
+                <p><span>SERVICES WE"RE PROVIDING</span></p>
+            <h2>What we offer as Best Event Management Company
+            </h2>
+            <p>Event forest is ranked as the topmost best event management company in Indore, just because of its exquisite timeless services. event forest offers the best quality performance and excellent assistance in all event. we provide creative solutions with the most vivid and exclusive ideas. As the best event management company in Indore, always offer with our passion knowledge creative ming and dedication to achieve the best result making your dreamy event to be a customised reality.
+
+            </p>
+            </div>
+            <div class="service2">
+                <div class="service22">
+                    <div class="srvc1">
+                        <img src="https://eventforest.in/images/section/what-we-offer/pre-wedding-shoot.jpg">
+                        <div class="belowphoto">
+                            <h3>Pre Wedding Photoshoot</h3>
+                            <p>Wedding Planner</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="service22">
+                    <div class="srvc2">
+                        <img src="https://eventforest.in/images/section/what-we-offer/flower-decoration.jpg">
+                        <div class="belowphoto">
+                        <h3>Flower Decoration</h3>
+                        <p>All types of decoration</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="service22">
+                    <div class="srvc3">
+                        <img src="https://eventforest.in/images/section/what-we-offer/catering-services.jpg">
+                        <div class="belowphoto">
+                        <h3>Catering Services</h3>
+                        <p>All types if catering</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="service22">
+                    <div class="srvc4">
+                        <img src="https://eventforest.in/images/section/what-we-offer/bridal-makeup.jpg">
+                        <div class="belowphoto">
+                        <h3>Bridal Makeup</h3>
+                        <p>makeup Artist</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="service22">
+                    <div class="srvc5">
+                        <img src="https://eventforest.in/images/section/what-we-offer/banquet-halls.jpg">
+                        <div class="belowphoto">
+                        <h3>Marriage Garden Hall</h3>
+                        <p>Party Halls</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="service22">
+                    <div class="srvc6">
+                        <img src="https://eventforest.in/images/section/what-we-offer/product-launch-event.jpg">
+                        <div class="belowphoto">
+                        <h3>Product Lauch Event</h3>
+                        <p>corporate Event</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="workdiv">
+            <div class="work1">
+                <p><span>OUR WORK</span></p>
+                <h2>Check Our Latest Creative Work</h2>
+                <p>Event forest is a profound name in the city of Indore for the best creative work in event management. Our latest and appreciable project are big fat wedding, the number of corporate events, birthday parties, and product launch seminar. also, we have linked up with some famous and reputed companies to showcase our work at events.we have presented our creativity in the new year event and all festive season mall decorations.
+
+                </p>
+            </div>
+            <div class="work2">
+                <img class="wimg1" src="https://eventforest.in/images/section/check-our-latest-creative-work/flour-decor.jpg">
+                <img class="wimg2" src="https://eventforest.in/images/section/check-our-latest-creative-work/family-photgraph.jpg">
+                <img class="wimg3" src="https://eventforest.in/images/section/check-our-latest-creative-work/sangeet-samaroh.jpg">
+                <img class="wimg4" src="https://eventforest.in/images/section/check-our-latest-creative-work/bridal-entry.jpg">
+                <img class="wimg5" src="https://eventforest.in/images/section/check-our-latest-creative-work/wedding-function.jpg">
+                <img class="wimg6" src="https://eventforest.in/images/section/check-our-latest-creative-work/wedding-teeka.jpg">
+                <img class="wimg7" src="https://eventforest.in/images/section/check-our-latest-creative-work/bridal-makeup.jpg">
+                <img class="wimg8" src="https://eventforest.in/images/section/check-our-latest-creative-work/wedding-shoot.jpg">
+                <img class="wimg9" src="https://eventforest.in/images/section/check-our-latest-creative-work/bridal-photoshoot.jpg">
+                <div class="wimg10">
+                    <iframe class="wimg10" width="900" height="500" src="https://www.youtube.com/embed/ipw1fQad5sg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="textimagediv">
+            <div class="txti">
+                <div class="tx">
+                    <p><span>WE ARE CREATIVE PLANNER</span></p>
+                    <h2>Live Bands & Singers, Celebrity Artists</h2>
+                    <p>Being married and not having music entertainment, it cannot happen in a wedding, taking special care of this, we bring live bands and the best artists of the country for you.
+
+                    </p>
+                </div>
+                <div class="ti">
+                     <img src="https://eventforest.in/images/section/we-are-creative-planner/live-band.png">
+                </div>
+                
+            </div>
+            <div class="txti">
+                
+                <div class="ti">
+                    <img src="https://eventforest.in/images/section/we-are-creative-planner/Bridal-Entry.png">
+                </div>
+                <div class="tx">
+                    <p><span>WE ARE CREATIVE ORGANIZER</span></p>
+                    <h2>Bridal Entry & Jaimala</h2>
+                    <p>We have dedicated professionals with the best skills to create something new and unique. we have experience of more than 5 years. our decor ideas and designs are definitely a source of inspiration that will surely make your venue look outstanding from every angle.
+
+                    </p>
+                </div>
+            </div>
+            <div class="txti">
+                <div class="tx">
+                    <p><span>WE ARE CREATIVE CHOREOGRAPHY
+                    </span></p>
+                    <h2>Dance Acts & Troupes</h2>
+                    <p>We can choreograph all sorts of performances bride and groom entries, family performances, and much more. our clients describe him as an understanding and flexible choreographer. If you are looking for someone to make your performances memorable contact us.
+
+                    </p>
+
+                </div>
+                <div class="ti">
+                    <img src="https://eventforest.in/images/section/we-are-creative-planner/dance.png">
+                </div>
+            </div>
+            <div class="txtie">
+                <div class="txtie1">
+                    <p><span>WE ARE CREATIVE AGENCY</span></p>
+                <h2>Stage Producation Hospitality & Logistics
+                </h2>
+                <p>We are one of the BEST Stage decor company who add the right amount of glamour and uniqueness to any event with their stunning decor, DESIGN your dreams so that you can CELEBRATE our innovation!
+
+                </p>
+                </div>
+                <img src="https://eventforest.in/images/section/we-are-creative-planner/wedding-stage.jpg">
+            </div>
+        </div>
+        <div class="customersdiv">
+            <p><span>HAPPY CUSTOMERS</span></p>
+            <h2>Clients Who Trust Us</h2>
+            <div class="cstmr">
+                <img src="https://eventforest.in/images/section/clients-who-trust-us/tech-forest.png">
+                <img src="https://eventforest.in/images/section/clients-who-trust-us/technology-seven.png">
+                <img src="https://eventforest.in/images/section/clients-who-trust-us/theleafleft.png">
+                <img src="https://eventforest.in/images/section/clients-who-trust-us/tiranga-news.png">
+                <img src="https://eventforest.in/images/section/clients-who-trust-us/fila.png">
+                <img src="https://eventforest.in/images/section/clients-who-trust-us/orange.png">
+                <img src="https://eventforest.in/images/section/clients-who-trust-us/little.png">
+                <img src="https://eventforest.in/images/section/clients-who-trust-us/thai.png">
+                <img src="https://eventforest.in/images/section/clients-who-trust-us/italian.png">
+                
+                <img  src="https://eventforest.in/images/section/clients-who-trust-us/lawyers.png">
+            </div>
+            <div class="cstmr2">
+                <h2>WE <span>Promise. </span>We <span>Deliver.</span></h2>
+                <button class="letbtn">Let's Work Together<div class="gol"></div></button>
+            </div>
+        </div>
+
+        <div class="clientssaydiv">
+            <p><span>WHAT OUR CLIENTS SAY ABOUT EVENT MANAGEMENT</span></p>
+            <h2>Over 2000+ Satisfied Clients and Growing</h2>
+            <div class="clientsbox">
+               <div class="csdimgd">
+                    <img src="https://eventforest.in/images/section/event-forest-reviews/sonali-singh.jpg">
+                    <div class="csdname">
+                        <img src="imagee/Play-Button-PNG-Transparent-Image.png">
+                        <h3>Sonali Singh</h3>
+                    </div>
+               </div>
+               <div class="csdimgd">
+                    <img src="https://eventforest.in/images/section/event-forest-reviews/sunita-goyal.jpg">
+                    <div class="csdname">
+                        <img src="imagee/Play-Button-PNG-Transparent-Image.png">
+                        <h3>Sunitta Goyal</h3>
+                    </div>
+               </div>
+               <div class="reviewbottom">
+                <p> I really enjoyed working with you and am so grateful for how well you excuted the vision From Mumbai.
+                    Thanks for making such a beautiful stage and made my wedding reception more amazing and lovely at the lowest prices and within the fixed time period as they promised.I will definitely recommend others to place order from event management company.
+                    
+                    </p> 
+                    <div class="csddata">
+                        <img src="https://eventforest.in/images/section/event-forest-reviews/girl2.jpg">
+                        <h3>Sunitta Goyal</h3>
+                        <p>Wedding Stage Setup Bhopal, MP</p>
+                    </div>
+                    <div class="redpoints">
+                        <div class="redpntouter">
+                            <div class="redpnt">
+
+                            </div>
+                        </div>
+                        <div class="redpntouter">
+                            <div class="redpnt">
+
+                            </div>
+                        </div>
+                        <div class="redpntouter">
+                            <div class="redpnt">
+
+                            </div>
+                        </div>
+
+                       
+                    </div>
+               </div>
+            </div>
+            <br><br>
+            <h3>Read More Reviews</h3>
+            <p>Read our reviews from all over India.</p>
+            <div class="reviewgoogle">
+                <div class="greview">
+                    <img src="https://eventforest.in/images/section/event-forest-reviews/google-review.jpg">
+                    <img src="https://eventforest.in/images/section/event-forest-reviews/google-review1.jpg">
+                    <img src="https://eventforest.in/images/section/event-forest-reviews/google-review2.jpg">
+                </div>
+                <div class="wreview">
+                    <img src="https://eventforest.in/images/section/event-forest-reviews/whatsapp-review.png">
+                    <img src="https://eventforest.in/images/section/event-forest-reviews/whatsapp-review1.png">
+                    <img src="https://eventforest.in/images/section/event-forest-reviews/whatsapp-review2.png">
+                    <img src="https://eventforest.in/images/section/event-forest-reviews/whatsapp-review3.png">
+                </div>
+            </div>
+        </div>
+        <div class="specialcelediv">
+            <p><span>WE WILL GIVE YOU EVERY</span></p>
+            <h2>Special Celebration</h2>
+            <p>Our diverse portfolio is rich with a variety of event done in multiple cities.We have worked on many occasion new year planing,social events and corporate event with corporate sector clients, real estate, healthcare, and more industries clients are coordinate with our team.
+
+            </p>
+            <div class="specialboxes">
+                <div class="sp">
+                    <img src="https://eventforest.in/images/section/special-celebration/wedding-planner.svg">
+                    <p>Wedding Planner</p>
+                </div>
+                <div class="sp">
+                    <img src="https://eventforest.in/images/section/special-celebration/data-management.svg">
+                    <p>Wedding Organizer</p>
+                </div>
+                <div class="sp">
+                    <img src="https://eventforest.in/images/section/special-celebration/event-management.svg">
+                    <p>Event Management</p>
+                </div>
+                <div class="sp">
+                    <img src="https://eventforest.in/images/section/special-celebration/photographer.svg">
+                    <p>Photographer</p>
+                </div>
+                <div class="sp">
+                    <img src="https://eventforest.in/images/section/special-celebration/wedding-invitation.svg">
+                    <p>Invitaion Card</p>
+                </div>
+                <div class="sp">
+                    <img src="https://eventforest.in/images/section/special-celebration/entertainment.svg">
+                    <p>Entertainment</p>
+                </div>
+                <div class="sp">
+                    <img src="https://eventforest.in/images/section/special-celebration/make-up.svg">
+                    <p>Makeup Artist</p>
+                </div>
+                <div class="sp">
+                    <img src="https://eventforest.in/images/section/special-celebration/hall.svg">
+                    <p>Party Hall</p>
+                </div>
+                <div class="sp">
+                    <img src="https://eventforest.in/images/section/special-celebration/pre-wedding-shoot.svg">
+                    <p>Pre Wedding Shoot</p>
+                </div>
+                <div class="sp">
+                    <img src="https://eventforest.in/images/section/special-celebration/banquet-halls.svg">
+                    <p>Banquet Halls</p>
+                </div>
+                <div class="sp">
+                    <img src="https://eventforest.in/images/section/special-celebration/new-year.svg">
+                    <p>New Year Event</p>
+                </div>
+                <div class="sp">
+                    <img src="https://eventforest.in/images/section/special-celebration/document.svg">
+                    <p>Documentation</p>
+                    
+                </div>
+                <div class="sp">
+                    <img src="https://eventforest.in/images/section/special-celebration/smartphone.svg">
+                    <p>Car Decoration</p>
+                    
+                </div>
+                <div class="sp">
+                    <img src="https://eventforest.in/images/section/special-celebration/bunch-of-flowers.svg">
+                    <p>Flower Decoration</p>
+                </div>
+                <div class="sp">
+                    <img src="https://eventforest.in/images/section/special-celebration/wedding-flower.svg">
+                    <p>Wedding Flower</p>
+                </div>
+                <div class="sp">
+                    <img src="https://eventforest.in/images/section/special-celebration/balloons.svg">
+                    <p>Balloon Decorators</p>
+                    
+                </div>
+                <div class="sp">
+                    <img src="https://eventforest.in/images/section/special-celebration/balloon.svg">
+                    <p>Party Balloon</p>
+                </div>
+                <div class="sp">
+                    <img src="https://eventforest.in/images/section/special-celebration/baker.svg">
+                    <p>Catering Services</p>
+                </div>
+                <div class="sp">
+                    <img src="https://eventforest.in/images/section/special-celebration/groceries.svg">
+                    <p>Wedding Catering</p>
+                </div>
+                <div class="sp">
+                    <img src="https://eventforest.in/images/section/special-celebration/board-meeting.svg">
+                    <p>Confrerence Event</p>
+                </div>
+                <div class="sp">
+                    <img src="https://eventforest.in/images/section/special-celebration/dancer.svg">
+                    <p>Live Band</p>
+                </div>
+                <div class="sp">
+                    <img src="https://eventforest.in/images/section/special-celebration/bride.svg">
+                    <p>Bridal Entry</p>
+                </div>
+                <div class="sp">
+                    <img src="https://eventforest.in/images/section/special-celebration/singer.svg">
+                    <p>Singer Celebrity</p>
+                </div>
+                <div class="sp">
+                    <img src="https://eventforest.in/images/section/special-celebration/band.svg">
+                    <p>Dance Art</p>
+                </div>
+                
+            </div>
+        </div>
+        <div class="lateststoriesdiv">
+            <p><span>WHAT'S GOING ON</span></p>
+            <h2>Latest Stories</h2>
+            <div class="lateststr">
+                <div class="ls">
+                    <img src="https://eventforest.in/images/section/home-blog/top-5-makeup-artist-india.jpg">
+                    <h4>Top 5 Makeup artist india</h4>
+                    <p>If you planned a particularly well-received corporate event before, let us know what elements you think contributed to its success.Before you can look into.
+
+                    </p>
+                    <div class="shares">
+                        <p>Shares</p>
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fa-solid fa-envelope"></i>
+                        <i class="fa-brands fa-facebook-messenger"></i>
+                    </div>
+                </div>
+                <div class="ls">
+                    <img src="https://eventforest.in/images/section/home-blog/top-5-photographer-india.jpg">
+                    <h4>Top 5 Photographer india</h4>
+                    <p>In event planning Keeping track of numerous tasks, multiple vendors, and constantly changing to-do lists all at once—while keeping.</p>
+                    <div class="shares">
+                        <p>Shares</p>
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fa-solid fa-envelope"></i>
+                        <i class="fa-brands fa-facebook-messenger"></i>
+                    </div>
+                </div>
+                <div class="ls">
+                    <img src="https://eventforest.in/images/section/home-blog/top-5-event-management-colleges-india.jpg">
+                    <h4>Top 5 Event Management Colledges india</h4>
+                    <p>If you planned a particularly well-received corporate event before, let us know what elements you think contributed to its success.Before you can look into.
+
+                    </p>
+                    <div class="shares">
+                        <p>Shares</p>
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fa-solid fa-envelope"></i>
+                        <i class="fa-brands fa-facebook-messenger"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contactdiv">
+            <div class="contactindiv">
+                <div class="contact1">
+                    <p><span>CONTACT NOW</span></p>
+                <h2>Have Question? Write a Message</h2>
+                
+                <form>
+                    <input type="text " placeholder="Full Name">
+
+                    
+                    <input type="text" placeholder="Email Address"><br>
+                    <input type="text" placeholder="Contact Number">
+                    <input type="text" placeholder="Subject"><br>
+                    <input type="text" placeholder="Message"> <br>
+                    <p><input id="inputwidth" type="checkbox" >I agree to the <span> Terms & Conditions</span> of Event management</p>
+                    <button>Submit <i class="fa-solid fa-angle-right arrow"></i><div class="gol"></div></button>
+                    <p><i class="fa-solid fa-lock"></i> We hate spam, and we respect your privacy.</p>
+                </form>
+                </div>
+                <div class="contact2">
+                    <img src="https://eventforest.in/images/section/contact-now/hellopic.png">
+                </div>
+            </div>
+        </div>
+        <div class="mapdiv">
+            <div class="map1">
+                <h2>Contact us</h2>
+                <h3><i class="fa-solid fa-location-pin"></i> Address:</h3>
+                <p>507 5th Floor Rajani Bhawan Near High Court</p>
+                <h3><i class="fa-solid fa-phone"></i> Phone:</h3>
+                <p>+91-6268-6762-20</p>
+                <h3><i class="fa-solid fa-envelope"></i> Email:</i></h3>
+                <p>indore@eventforest.in</p>
+                <h3><i class="fa-solid fa-globe"></i>Website:</h3>
+                <p>www.eventforest.in</p>
+            </div>
+            <div class="map2">
+                <iframe class="mapclass" src="https://www.google.com/maps/d/embed?mid=197lzP_DSVke1B0V8s18zkYZPKmzSOKzO&hl=en&ehbc=2E312F" width="auto" height="auto"></iframe>
+            </div>
+        </div>
+        <div class="emailbox">
+            <div class="emailbox1">
+                <h2>Get New Insights Weekly
+                </h2>
+                <p>News letter - Subscribe here to get interesting stuff and updates! Enter your email Address
+
+                </p>
+            </div>
+            <div class="emailbox2">
+                <input type="email" placeholder="Your Email Address" >
+                <button>Subscribe <i class="fa-solid fa-angle-right arrow"></i><div class="gol"></div></button>
+            </div>
+        </div>
+        <div class="footer1">
+            <div class="f1">
+                <img src="https://eventforest.in/images/event-forest-logo.png">
+                <p>We believe in working closely with the aims of our clients along with creating a suitable,dedicated and safe event environment responsible for client satisfaction.
+
+                </p>
+                <button>Company Brochure <i class="fa-solid fa-angle-right arrow"> </i><div class="gol"></div></button>
+            </div>
+            <div class="f1">
+                <ul>
+                    <li></li><h3>Services</h3></li>
+                    <li><a href="#">Wedding Planner</a><div class="divline"></div></li>
+                    <li><a href="#">Balloon Decorators</a><div class="divline"></div></li>
+                    <li><a href="#">Birthday Decoration</a><div class="divline"></div></li>
+                    <li><a href="#">Pre Wedding Shoot</a><div class="divline"></div></li>
+                </ul>
+
+            </div>
+            <div class="f1">
+                <ul>
+                    <li><h3>Quick Links</h3></li>
+                    <li><a href="#">Flower Decoration</a><div class="divline"></div></li>
+                    <li><a href="#">Makeup Artist</a><div class="divline"></div></li>
+                    <li><a href="#">Best photographer</a><div class="divline"></div></li>
+                    <li><a href="#">Marriage Garden Hall</a><div class="divline"></div></li>
+                </ul>
+
+            </div>
+            <div class="f1">
+                <ul>
+                    <li><h3>Quick Links</h3></li>
+                    <li><a href="#">Catering Services</a><div class="divline"></div></li>
+                    <li><a href="#">Corporate Event Management</a><div class="divline"></div></li>
+                    <li><a href="#">Product Launch Event</a><div class="divline"></div></li>
+                    <li><a href="#">Mall Decoration</a><div class="divline"></div></li>
+                </ul>
+            </div>
+        </div>
+        <div class="f2">
+            <div class="f21">
+                <h3>Our Achivements</h3>
+                <p>Event Forest has received many Achievements each year, but we persistently believe that our greatest award is our client satisfaction and their success. We have received wide recognition within the India.
+
+                </p>
+            </div>
+            <img src="https://eventforest.in/images/footer/high-performer.png">
+            <img src="https://eventforest.in/images/footer/best-wedding-planner.png">
+            <img src="https://eventforest.in/images/footer/best-event-leader.png">
+            <img src="https://eventforest.in/images/footer/top-event-management-company.png">
+
+        </div>
+        <div class="f3">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i> 
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-pinterest"></i>
+            <i class="fa-brands fa-vimeo-v"></i>
+            <i class="fab fa-whatsapp"></i>
+            <p >Copyright © 2020 Event Forest. All rights reserved.
+
+            </p>
+        </div>
+
+    </body>
+        
+</html>

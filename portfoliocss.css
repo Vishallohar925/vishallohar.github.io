@@ -25,6 +25,8 @@
     
     
 }
+
+
 .nav a{
     text-decoration: none;
     color:white;
@@ -180,6 +182,38 @@ h3{
     font-size: 30px;
     color:whitesmoke;
     text-shadow: 0px 0px 6px red;
+}
+.dropdown{
+    position: relative;
+}
+
+.dmenu{
+    position:absolute;
+    display: none;
+   flex-direction: column;
+   top:20px;
+   left:-50px;
+   z-index: 5;
+   padding: 36% 50% 7% 5%;
+   border-radius: 5px;
+    text-shadow: 2px 2px 65% rgb(255, 255, 255);
+    font-size: 18px;
+    width: 300%;
+    height: auto;
+   /* background-color: rgba(0, 0 , 0, 0.4); */
+   backdrop-filter: blur(10px);
+}
+.dmenu a{
+    width: 100%;
+    background-image: linear-gradient(270deg,pink, violet);
+    padding:3% 15% 3% 4%;
+    border-radius: 5px;
+    margin-top:4px;
+    margin-left: 8%;
+}
+.dropdown:hover .dmenu{
+    display: flex;
+    
 }
 h1{
     font-family: Quicksand;
